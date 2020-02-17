@@ -1,0 +1,9 @@
+{
+  "usingComponents": {
+    "ec-canvas":"../../ec-canvas/ec-canvas",
+    "line":"../../components/trend/line/line",
+    "pie":"../../components/trend/pie/pie",
+    "trendMap":"../../components/trend/map/map"
+ 
+  }
+}

@@ -1,0 +1,78 @@
+.top {
+    height: 300rpx;
+    position: relative;
+    text-align: center;
+}
+
+.top image {
+    height: 300rpx;
+    width: 100%;
+}
+
+.title {
+    width: 100%;
+    position: absolute;
+    top: 80rpx;
+    font-size: 60rpx;
+    font-weight: 700;
+    -webkit-text-fill-color: orangered;/*文字的填充色*/
+    -webkit-text-stroke: 0.5rpx white;
+}
+
+.nav {
+    height: 80rpx;
+    color: rgba(0, 0, 0, .65);
+    display: flex;
+    border: 1px solid ghostwhite;
+}
+
+.nav-each {
+    line-height: 80rpx;
+    flex: 1;
+    text-align: center;
+}
+.actived{
+    color: lightskyblue;
+    font-weight: 700;
+    border-bottom: 5rpx solid lightskyblue;
+}
+.desc {
+    width: 100%;
+    font-size: 50rpx;
+    font-weight: 700;
+    position: absolute;
+    top: 180rpx;
+    color: orangered;
+}
+.msg-info{
+    line-height: 60rpx;
+    font-size: 30rpx;
+    text-align: center;
+}
+.about{
+    font-size: 30rpx;
+    font-weight: 700;
+}
+.num{
+    font-size: 24rpx;
+}
+.each{
+    margin: 20rpx 0;
+}
+.each1{
+    color: rgb(229, 116, 113);
+}
+.each2{
+    color: rgb(221, 164, 81);
+}
+.each3{
+    color: rgb(145, 147, 153);
+}
+.each4{
+    color: rgb(126, 190, 80);
+}
+.map-title{
+    font-size: 34rpx;
+    text-align: center;
+    margin: 30rpx;
+}

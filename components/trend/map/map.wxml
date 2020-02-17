@@ -1,0 +1,7 @@
+<view class="container">
+  <view class="full" wx:if="{{isShow}}">
+    <view class="full-each" bind:tap="selects" data-item="{{item.provinceName}}" wx:for="{{area}}">{{item.preProvinceName}}</view>
+  </view>
+  <button bind:tap="openShow"  class="changebtn">{{position}}</button>
+  <ec-canvas wx:if="{{!isShow}}" id="mychart-dom-area" canvas-id="mychart-area" ec="{{ map }}"></ec-canvas>
+</view>

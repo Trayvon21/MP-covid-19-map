@@ -1,0 +1,43 @@
+<view class="top">
+    <image src="../../assets/top.jpg"></image>
+    <view class="title">新型冠状病毒肺炎疫情</view>
+    <view class="desc">实时动态</view>
+</view>
+<view class="nav">
+    <view wx:for="{{navList}}" data-page="{{item}}" bind:tap="changePage" class="nav-each {{item===actived?'actived':''}}">
+        {{item}}
+    </view>
+</view>
+<view class="qushi" wx:if="{{actived==='疫情趋势'}}">
+    <line List="{{List}}"></line>
+    <pie data="{{data}}"/>
+</view>
+<view class="height" wx:if="{{actived==='疫情地图'}}">
+    <view class="msg-info">截止至{{data.date}}（北京时间）统计</view>
+    <view class="about flex t-center">
+        <view class="each each1">
+            <view>确诊</view>
+            <view>{{data.diagnosed}}例</view>
+            <view class="num">较昨日：{{data.diagnosedIncr>0?'+':'-'}}{{data.diagnosedIncr}}</view>
+        </view>
+        <view class="each each2">
+            <view>疑似</view>
+            <view>{{data.suspect}}例</view>
+            <view class="num">较昨日：{{data.suspect>0?'+':'-'}}{{data.suspectIncr}}</view>
+        </view>
+        <view class="each each3">
+            <view>死亡</view>
+            <view>{{data.death}}例</view>
+            <view class="num">较昨日:{{data.death>0?'+':'-'}}{{data.deathIncr}}</view>
+        </view>
+        <view class="each each4">
+            <view>治愈</view>
+            <view>{{data.cured}}例</view>
+            <view class="num">较昨日:{{data.cured>0?'+':'-'}}{{data.curedIncr}}</view>
+        </view>
+    </view>
+    <view class="map-show" wx:if="{{data.area}}">
+        <view class="map-title">各省最新疫情查询(点击选择具体省份)</view>
+        <trendMap area="{{data.area}}"></trendMap>
+    </view>
+</view>

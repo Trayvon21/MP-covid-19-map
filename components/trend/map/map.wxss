@@ -1,0 +1,35 @@
+ec-canvas {
+    width: 100%;
+    height: 600rpx;
+}
+
+.container {
+    width: 100%;
+    height: 680rpx;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+.changebtn {
+    height: 80rpx;
+    width: 100%!important;
+}
+.full{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+   
+    overflow: hidden;
+    overflow-y: scroll;
+    background: white;
+    z-index: 999;
+}
+.full-each{
+    text-align: center;
+    font-size: 36rpx;
+    line-height: 50rpx;
+    border-bottom:1px solid rgb(230, 230, 230) ;
+    padding: 20rpx;
+}

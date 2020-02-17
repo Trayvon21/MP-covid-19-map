@@ -1,0 +1,11 @@
+<view class="container" wx:if="{{allList}}">
+  <view class="title">全国<text class="each1">确诊人数</text>总览</view>
+  <ec-canvas id="mychart-dom-pie" canvas-id="mychart-pie" ec="{{ pie1 }}" bind:init="echartInit"></ec-canvas>
+  <view class="title">全国<text class="each2">疑似人数</text>总览</view>
+  <ec-canvas id="mychart-dom-pie" canvas-id="mychart-pie" ec="{{ pie2 }}" bind:init="echartInit"></ec-canvas>
+  <view class="title">全国<text class="each4">治愈人数</text>总览</view>
+  <ec-canvas id="mychart-dom-pie" canvas-id="mychart-pie" ec="{{ pie3 }}" bind:init="echartInit"></ec-canvas>
+  <view class="title">全国<text class="each3">死亡人数</text>总览</view>
+  <ec-canvas id="mychart-dom-pie" canvas-id="mychart-pie" ec="{{ pie4 }}" bind:init="echartInit"></ec-canvas>
+</view>
+<view class="" hover-class="none" hover-stop-propagation="false"></view>
